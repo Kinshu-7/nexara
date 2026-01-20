@@ -310,3 +310,22 @@ footer {
 #content {
   display: none;
 }
+
+/* Loader visible by default */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Hide loader */
+#loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
