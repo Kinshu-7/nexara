@@ -52,4 +52,14 @@ window.addEventListener("load", () => {
   document.getElementById("content").style.display = "block";
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    const loader = document.getElementById("loader");
+    if (loader) {
+      loader.classList.add("hidden");
+    }
+  }, 800); // fallback delay
+});
+
+
 
