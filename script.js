@@ -12,3 +12,10 @@
         window.open("https://discord.gg/bqf4SuxVnm", "_blank");
       }
     });
+
+    <script>
+  window.addEventListener("load", () => {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("content").style.display = "block";
+  });
+</script>
