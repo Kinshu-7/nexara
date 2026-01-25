@@ -4,8 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nexara Discord Community – Gaming & Creative Hub" />
-  <meta name="author" content="Nexara Community" />
   <title>Nexara Discord Community – Gaming & Creative Hub</title>
 
   <!-- SEO Meta -->
@@ -13,100 +11,117 @@
     content="Join Nexara, a vibrant Discord community for gamers, Minecraft builders, and creative enthusiasts. Friendly moderators and exciting events await!">
   <meta name="keywords"
     content="Nexara, Discord server, gaming community, Minecraft builds, online events, creative community, join Discord, friendly moderators">
-  <link rel="shortcut icon" href="https://img.icons8.com/?size=160&id=64097&format=png">
-  <meta name="robots" content="index, follow">
+  <link rel="shortcut icon" href="/logo.png">
 
-  <!-- Open Graph / Social Sharing -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Nexara Discord Community">
   <meta property="og:description"
     content="Join Nexara, a vibrant Discord community for gamers, Minecraft builders, and creative enthusiasts.">
   <meta property="og:image"
     content="https://cdn.discordapp.com/attachments/1449626287168684075/1459211473887690996/eb649338-e79d-4212-8faf-a76f3a592fce_bgr.png">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://nexara.tiiny.site">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Nexara Discord Community">
-  <meta name="twitter:description"
-    content="Join Nexara, a vibrant Discord community for gamers, Minecraft builders, and creative enthusiasts.">
-  <meta name="twitter:image"
-    content="https://cdn.discordapp.com/attachments/1449626287168684075/1459211473887690996/eb649338-e79d-4212-8faf-a76f3a592fce_bgr.png">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <!-- Loader -->
   <div id="loader">
     <div class="spinner"></div>
+    <div class="loader-text">Loading Nexara...</div>
   </div>
-  
+
+  <!-- Particles background -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Main content -->
   <div id="content">
-    <h1>Welcome to My Website</h1>
-    <p>This is the main content.</p>
-  </div>
-  
-  <header>
-    <img class="server-logo"
-    src="logo.png"
-      alt="Nexara Discord Server Logo">
-    <h1>Welcome to Nexara</h1>
-    <p>A creative Discord community for gamers, Minecraft builders, and friendly people worldwide.</p>
+    <header>
+      <img class="server-logo"
+        src="/logo.png"
+        alt="Nexara Discord Server Logo"
+        onerror="this.src='https://via.placeholder.com/200x200/7289da/ffffff?text=Nexara'">
 
-    <div class="join-wrapper">
-      <button class="join-btn disabled" id="joinBtn" disabled>Join Nexara Now</button>
-      <span class="tooltip">Read the rules!</span>
-    </div>
+      <h1>Welcome to Nexara</h1>
+      <p class="subtitle">A vibrant Discord community for gamers, Minecraft builders, and creative enthusiasts
+        worldwide. Join us for exciting events, friendly conversations, and endless creativity!</p>
 
-    <link rel="stylesheet" href="style.css">
-  </header>
-
-  <main>
-    <section>
-      <h2>Community Rules</h2>
-      <ul>
-        <li>✨ Be respectful to all members.</li>
-        <li>🚫 No spamming or self-promotion.</li>
-        <li>🤝 Keep conversations friendly.</li>
-        <li>🔒 Respect privacy.</li>
-        <li>📜 Follow Discord Terms of Service.</li>
-      </ul>
-
-      <label class="custom-check">
-        <input type="checkbox" id="agreeRules">
-        <span class="checkmark"></span>
-        I agree to the rules
-      </label>
-    </section>
-
-    <section>
-      <h2>Meet the Moderators</h2>
-      <div class="team">
-        <article class="member">
-          <a href="https://youtube.com/@kinshu17" target="_blank" rel="noopener">
-            <img
-            src="img.png"
-              alt="Kinshu Server Owner">
-          </a>
-          <h3>Kinshu</h3>
-          <p>Server Owner</p>
-        </article>
-        <article class="member">
-          <img
-          src="img2.jpg"
-            alt="Harshit Community Manager">
-          <h3>Harshit</h3>
-          <p>Community Manager</p>
-        </article>
+      <div class="stats-bar">
+        <div class="stat-item">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Members</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Active</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Channels</span>
+        </div>
       </div>
-    </section>
-  </main>
-  <script src="script.js"></script>
 
-  <footer>
-    © 2026 Nexara Community
-  </footer>
+      <div class="join-wrapper">
+        <button class="join-btn disabled" id="joinBtn" disabled>
+          Join Nexara Now
+        </button>
+        <span class="tooltip">Please read and accept the rules first!</span>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Community Rules</h2>
+        <ul>
+          <li>✨ Be respectful to all members – treat others how you want to be treated</li>
+          <li>🚫 No spamming, advertising, or self-promotion without permission</li>
+          <li>🤝 Keep conversations friendly, positive, and welcoming</li>
+          <li>🔒 Respect everyone's privacy and personal boundaries</li>
+          <li>📜 Follow Discord's Terms of Service and Community Guidelines</li>
+          <li>🎮 Have fun and enjoy your time in our community!</li>
+        </ul>
+
+        <div style="text-align: center;">
+          <label class="custom-check">
+            <input type="checkbox" id="agreeRules">
+            <span class="checkmark"></span>
+            I have read and agree to follow these rules
+          </label>
+        </div>
+      </section>
+
+      <section>
+        <h2>Meet the Team</h2>
+        <div class="team">
+          <article class="member">
+            <a href="https://youtube.com/@kinshu17" target="_blank" rel="noopener">
+              <img
+                src="img.png"
+                alt="Kinshu - Server Owner"
+                onerror="this.src='https://via.placeholder.com/120x120/7289da/ffffff?text=K'">
+            </a>
+            <h3>Kinshu</h3>
+            <p>Server Owner & Founder</p>
+          </article>
+
+          <article class="member">
+            <img src="img2.jpg" alt="Harshit - Community Manager"
+              onerror="this.src='https://via.placeholder.com/120x120/00d4ff/ffffff?text=H'">
+            <h3>Harshit</h3>
+            <p>Community Manager</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Nexara Community • Built with 💙 for our amazing members
+    </footer>
+  </div>
+
+<script src="script.js"></script>
 </body>
 
 </html>
