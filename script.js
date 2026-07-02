@@ -6,7 +6,7 @@ yearEl.textContent = new Date().getFullYear();
 if (onlineEl) {
   const baseOnline = 10;
   setInterval(() => {
-    const variation = Math.floor(Math.random() * 3);
+    const variation = Math.floor(Math.random() * 7);
     onlineEl.textContent = (baseOnline + variation).toLocaleString();
   }, 3000);
 }
